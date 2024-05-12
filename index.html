@@ -4,39 +4,195 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Portafolio</h1>
+    <!-- HEADER DESIGN -->
+    <header class="header"> <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portafolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Sobre mi</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <!--HOME SECTION DESIGN -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, my name is </h3>
+                <h1>Leonardo Yaranga</h1>
+                <h3>And I'm a <span class="multiple-text">Software engineering student</span> </h3>
+                <p>Welcome to my portfolio. If you want to contact me here is my phone: <a style="color:chocolate"
+                        href="tel:+0995667373">0995667373</a>
+                </p>
+                <p>Or write to me at <a style="color:chocolate"
+                        href="mailto:tu-correo@example.com">leonardo.yaranga@gmail.com</a></p>
+                <div class="social-media">
+                    <a href="https://twitter.com/Leotrikis45" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/leonardo.yaranga/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/leonardo-yaranga-0a5447220/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="home-img">
+                <img src="./images/Foto carnet.jpg" alt="">
+            </div>
         </section>
-        <section>
-            <h2>Proyectos</h2>
-            <ul>
-                <li>Proyecto 1</li>
-                <li>Proyecto 2</li>
-                <li>Proyecto 3</li>
-            </ul>
+
+        <!--ABOUT SECTION DESIGN -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./images/Foto carnet.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Software engineering student</h3>
+                <p>I am a person who is committed to what he has to do and does not give up until he achieves what he
+                    has proposed, I like to work and meet other people.
+                </p>
+                <p>
+                    Although sometimes I have a little bad time I am gratified when I overcome challenges and overcome
+                    myself.
+                </p>
+            </div>
         </section>
-        <section>
-            <h2>Contacto</h2>
-            <p>Correo:
-                <a href="mailto:">dmsaavedra@espe.edu.ec</a>
-            </p>
+
+        <!--SERVICES SECTION DESIGN -->
+        <section class="services" id="services">
+            <h2 class="heading">My <span>skills</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>I know these languages and I know that I can learn even more.</p>
+                    <p><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i>
+                        <i class="fa-brands fa-js"><i class="fa-brands fa-php"></i></i>
+                    </p>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX Designing</h3>
+                    <p>I have been involved in applications involving the frontend.</p>
+                    <p><i class="fa-brands fa-react"><i class="fa-brands fa-bootstrap"></i></i></p>
+                </div>
+                <div class="services-box">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p>I know how to connect the programs or applications with database</p>
+                    <p></p>
+                </div>
+                <div class="services-box">
+                    <h3>Programming</h3>
+                    <p>I have knowledge of programming languages.</p>
+                    <p><i class="fa-brands fa-python"></i> <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-c"></i>
+                </div>
+
+            </div>
+        </section>
+        <!-- PORTAFOLIO SECTION DESIGN -->
+        <section class="portafolio" id="portafolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portafolio-container">
+                <div class="portafolio-box">
+                    <img src="./images/projects/AirportTaxiScheduling.jpg" alt="">
+                    <div class="portafolio-layer">
+                        <h4>Passenger and route scheduling</h4>
+                        <p>It was developed to make it easier to manage a cab service with recurring passengers that
+                            would be saved as contacts, it also helps to not forget the races and generate reports of
+                            all trips made.</p>
+                        <a href="https://github.com/JoshSy01/T10-ProgressTeam" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portafolio-box">
+                    <img src="./images/projects/GestionEstudiantes.jpg" alt="">
+                    <div class="portafolio-layer">
+                        <h4>Student management</h4>
+                        <p>Managing the students in a class or multiple classes can make it easier for a teacher to keep
+                            local records.</p>
+                        <a href="https://github.com/ericklasluisa/GestionEstudiantes" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portafolio-box">
+                    <img src="./images/projects/BananaCokctailsMain.jpg" alt="">
+                    <div class="portafolio-layer">
+                        <h4>Local online store</h4>
+                        <p>An online store that displays your products and can add them to the cart to generate an
+                            invoice.</p>
+                        <a href="https://github.com/LeonardoYaranga/BananaCocktailsTiendaOnlineGrupo4"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="portafolio-box">
+                    <img src="./images/projects/TiendaOnlineConAdministracion.jpg" alt="">
+                    <div class="portafolio-layer">
+                        <h4>Online store with administration</h4>
+                        <p>Besides being able to display the products and add them to the cart you can manage the
+                            available products where only the authorized user can add, view, edit and disable products
+                            that will be reflected for customers users. ipsum dolor sit, amet consectetur adipiscing
+                            elit .</p>
+                        <a href="https://github.com/LeonardoYaranga/ReactBananaCocktailsGrupo4" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CONTACT SECTION DESIGN -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class=" input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Portafolio</p>
+    <!-- FOOTER DESIGN -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2024 Portafolio Yaranga Leonardo</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <div class="social-media">
+            <a href="https://twitter.com/Leotrikis45" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/leonardo.yaranga/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/leonardo-yaranga-0a5447220/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
     </footer>
+
+    <!-- JAVASCRIPT -->
+    
+    <script src="https://unpkg.com/scrollreveal"></script>  <!--To give movements of appearing-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!--To give the effect of typing and retyping some words-->
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
