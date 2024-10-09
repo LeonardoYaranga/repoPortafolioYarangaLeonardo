@@ -272,17 +272,25 @@ home-content h1 {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 4rem;
+    padding: 2rem 1.5rem; 
     transform: translateY(100%);
     transition: .5s ease;
 }
 
+.portafolio-layer{
+    overflow-y: auto;
+}
+
 .portafolio-box:hover .portafolio-layer {
     transform: translateY(0);
+}
+
+.portafolio-layer h4, .portafolio-layer p {
+    margin: 1rem 1rem; /* Añade márgenes entre elementos para mejor separación */
 }
 
 .portafolio-layer h4 {
@@ -305,7 +313,7 @@ home-content h1 {
 }
 
 .portafolio-layer a i {
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--snd-bg-color);
 }
 
