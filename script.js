@@ -49,9 +49,25 @@ ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
 
 /*typed js */
 const typed = new Typed('.multiple-text', {
-    strings: ['Software engineering student'],
+    strings: ['Software engineering'],
     typeSpeed: 90,
     backSpeed: 90,
     backDelay: 1000,
     loop: true,
-})
+});
+
+/* Contact Form Email */
+function sendEmail(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById("contact-name").value;
+    const email = document.getElementById("contact-email").value;
+    const phone = document.getElementById("contact-phone").value;
+    const subject = document.getElementById("contact-subject").value;
+    const body = document.getElementById("contact-body").value;
+    
+    const mailtoBody = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${body}`;
+    const mailtoLink = `mailto:leonardo.yaranga@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(mailtoBody)}`;
+    
+    window.location.href = mailtoLink;
+}
