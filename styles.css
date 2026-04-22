@@ -75,6 +75,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: auto;
 }
 
 .home-content h3 {
@@ -164,6 +165,7 @@ home-content h1 {
     align-items: center;
     gap: 2rem;
     background: var(--snd-bg-color);
+    min-height: auto;
 }
 
 .about-img img {

@@ -20,9 +20,9 @@
     <i class="fa-solid fa-bars" id="menu-icon"></i>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Skills</a>
       <a href="#portafolio">Portfolio</a>
+      <a href="#services">Skills</a>
+
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -34,126 +34,30 @@
         <h1>Leonardo Yaranga</h1>
         <h3>
           And I'm a
-          <span class="multiple-text">Software engineering</span>
+          <span class="multiple-text">Software engineer</span>
         </h3>
         <p>
-          Welcome to my portfolio. If you want to contact me here is my phone:
-          <a style="color: chocolate" href="tel:+0995667373">0995667373</a>
+          I am a person who is committed to what he has to do and does not
+          give up until he achieves what he has proposed. I like to work and
+          meet other people. Although sometimes I have a little bad time I am gratified when I
+          overcome challenges and overcome myself.
         </p>
         <p>
-          Or write to me at
-          <a style="color: chocolate" href="mailto:tu-correo@example.com">leonardo.yaranga@gmail.com</a>
+          Welcome to my portfolio! If you want to contact me here is my phone:
+          <a style="color: chocolate" href="tel:+0995667373">0995667373</a>,
+          or write to me at
+          <a style="color: chocolate" href="mailto:leonardo.yaranga@gmail.com">leonardo.yaranga@gmail.com</a>.
         </p>
-        <div class="social-media">
-          <a href="https://twitter.com/Leotrikis45" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/leonardo.yaranga/" target="_blank"><i
-              class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/leonardo-yaranga-0a5447220/" target="_blank"><i
-              class="fa-brands fa-linkedin-in"></i></a>
-        </div>
+        <social-media-links></social-media-links>
       </div>
       <div class="home-img">
         <img src="./images/FotoGrande.jpeg" alt="" />
       </div>
     </section>
 
-    <!--ABOUT SECTION DESIGN -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="./images/FotoGrande.jpeg" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Software engineering</h3>
-        <p>
-          I am a person who is committed to what he has to do and does not
-          give up until he achieves what he has proposed, I like to work and
-          meet other people.
-        </p>
-        <p>
-          Although sometimes I have a little bad time I am gratified when I
-          overcome challenges and overcome myself.
-        </p>
-      </div>
-    </section>
 
-    <!--SERVICES SECTION DESIGN -->
-    <section class="services" id="services">
-      <h2 class="heading">My <span>skills</span></h2>
-      <div class="services-container">
-        <!-- Back Development -->
-        <div class="services-box">
-          <i class="fa-solid fa-server"></i>
-          <h3>Backend</h3>
-          <p>I know how to work with this backend frameworks a and I can learn even more.</p>
-          <p>
-            <i class="devicon-nestjs-plain" title="Nest.js"></i>
-            <i class="devicon-flask-plain" title="Flask"></i>
-            <i class="devicon-fastapi-plain" title="FastAPI"></i>
-          </p>
-        </div>
 
-        <!-- UI/UX Designing -->
-        <div class="services-box">
-          <i class="fa-solid fa-palette"></i>
-          <h3>UI/UX Designing</h3>
-          <p>I have been involved in applications involving the frontend.</p>
-          <p>
-            <i class="fa-brands fa-react" title="React"></i>
-            <i class="devicon-nextjs-plain" title="Next.js"></i>
-            <i class="devicon-angularjs-plain" title="Angular"></i>
-            <i class="devicon-tailwindcss-plain" title="TailwindCSS"></i>
-            <i class="devicon-materialui-plain" title="Material UI"></i>
-          </p>
-        </div>
 
-        <!-- Database Management -->
-        <div class="services-box">
-          <i class="fa-solid fa-database"></i>
-          <h3>Database Management</h3>
-          <p>
-            I know how to connect programs or applications with databases.
-          </p>
-          <p>
-            <i class="devicon-mongodb-plain" title="MongoDB"></i>
-            <i class="devicon-mysql-plain" title="MySQL"></i>
-            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
-            <i class="devicon-firebase-plain" title="Firebase"></i>
-          </p>
-        </div>
-
-        <!-- Programming -->
-        <div class="services-box">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Programming</h3>
-          <p>I have knowledge of programming languages and tools.</p>
-          <p>
-            <i class="fa-brands fa-python" title="Python"></i>
-            <i class="fa-brands fa-java" title="Java"></i>
-            <i class="fa-brands fa-microsoft" title="C#"></i>
-            <i class="devicon-typescript-plain" title="TypeScript"></i>
-            <i class="devicon-dart-plain" title="Dart"></i>
-          </p>
-        </div>
-
-        <!-- Additional Tools -->
-        <div class="services-box">
-          <i class="fa-solid fa-tools"></i>
-          <h3> Other Tools</h3>
-          <p>
-            I work with additional development tools.
-          </p>
-          <p>
-
-            <i class="fa-brands fa-github" title="GitHub"></i>
-            <i class="fa-brands fa-docker" title="Docker"></i>
-            <i class="devicon-jira-plain" title="Jira"></i>
-            <i class="devicon-firebase-plain" title="Firebase Auth"></i>
-            <i class="devicon-selenium-plain" title="Selenium"></i>
-          </p>
-        </div>
-      </div>
-    </section>
     <!-- PORTAFOLIO SECTION DESIGN -->
     <section class="portafolio" id="portafolio">
       <h2 class="heading">Latest <span>Projects</span></h2>
@@ -294,6 +198,84 @@
       </div>
     </section>
 
+    <!--SERVICES SECTION DESIGN -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>skills</span></h2>
+      <div class="services-container">
+        <!-- Back Development -->
+        <div class="services-box">
+          <i class="fa-solid fa-server"></i>
+          <h3>Backend</h3>
+          <p>I know how to work with this backend frameworks a and I can learn even more.</p>
+          <p>
+            <i class="devicon-nestjs-plain" title="Nest.js"></i>
+            <i class="devicon-flask-plain" title="Flask"></i>
+            <i class="devicon-fastapi-plain" title="FastAPI"></i>
+          </p>
+        </div>
+
+        <!-- UI/UX Designing -->
+        <div class="services-box">
+          <i class="fa-solid fa-palette"></i>
+          <h3>UI/UX Designing</h3>
+          <p>I have been involved in applications involving the frontend.</p>
+          <p>
+            <i class="fa-brands fa-react" title="React"></i>
+            <i class="devicon-nextjs-plain" title="Next.js"></i>
+            <i class="devicon-angularjs-plain" title="Angular"></i>
+            <i class="devicon-tailwindcss-plain" title="TailwindCSS"></i>
+            <i class="devicon-materialui-plain" title="Material UI"></i>
+          </p>
+        </div>
+
+        <!-- Database Management -->
+        <div class="services-box">
+          <i class="fa-solid fa-database"></i>
+          <h3>Database Management</h3>
+          <p>
+            I know how to connect programs or applications with databases.
+          </p>
+          <p>
+            <i class="devicon-mongodb-plain" title="MongoDB"></i>
+            <i class="devicon-mysql-plain" title="MySQL"></i>
+            <i class="devicon-postgresql-plain" title="PostgreSQL"></i>
+            <i class="devicon-firebase-plain" title="Firebase"></i>
+          </p>
+        </div>
+
+        <!-- Programming -->
+        <div class="services-box">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Programming</h3>
+          <p>I have knowledge of programming languages and tools.</p>
+          <p>
+            <i class="fa-brands fa-python" title="Python"></i>
+            <i class="fa-brands fa-java" title="Java"></i>
+            <i class="fa-brands fa-microsoft" title="C#"></i>
+            <i class="devicon-typescript-plain" title="TypeScript"></i>
+            <i class="devicon-dart-plain" title="Dart"></i>
+          </p>
+        </div>
+
+        <!-- Additional Tools -->
+        <div class="services-box">
+          <i class="fa-solid fa-tools"></i>
+          <h3> Other Tools</h3>
+          <p>
+            I work with additional development tools.
+          </p>
+          <p>
+
+            <i class="fa-brands fa-github" title="GitHub"></i>
+            <i class="fa-brands fa-docker" title="Docker"></i>
+            <i class="devicon-jira-plain" title="Jira"></i>
+            <i class="devicon-firebase-plain" title="Firebase Auth"></i>
+            <i class="devicon-selenium-plain" title="Selenium"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!--CONTACT SECTION DESIGN -->
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me</span></h2>
@@ -321,13 +303,7 @@
     <div class="footer-iconTop">
       <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
     </div>
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/leonardo-yaranga-0a5447220/" target="_blank"><i
-          class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://github.com/LeonardoYaranga" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://x.com/wyes_lje" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.instagram.com/wyes_lje/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    </div>
+    <social-media-links></social-media-links>
   </footer>
 
   <!-- JAVASCRIPT -->

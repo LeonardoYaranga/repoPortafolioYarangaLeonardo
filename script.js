@@ -42,14 +42,14 @@ ScrollReveal({
     delay: 300,
 });
 
-ScrollReveal().reveal('.home - content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portafolio-box, .contact form', { origin: 'buttom' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-contact p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .services-container, .portafolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content p', { origin: 'right' });
 
 /*typed js */
 const typed = new Typed('.multiple-text', {
-    strings: ['Software engineering'],
+    strings: ['Software engineer'],
     typeSpeed: 90,
     backSpeed: 90,
     backDelay: 1000,
@@ -71,3 +71,18 @@ function sendEmail(event) {
     
     window.location.href = mailtoLink;
 }
+
+/* Web Component for Social Media Links */
+class SocialMediaLinks extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/leonardo-yaranga-0a5447220/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/LeonardoYaranga" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/wyes_lje" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/wyes_lje/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        `;
+    }
+}
+customElements.define('social-media-links', SocialMediaLinks);
